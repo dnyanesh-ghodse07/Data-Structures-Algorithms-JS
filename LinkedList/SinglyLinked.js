@@ -78,6 +78,15 @@ class SinglyLikedList{
         }
         return indexNode;
     }
+    printList(){
+        const list = [];
+        let head = this.head;
+        while(head){
+            list.push(head.value);
+            head = head.next;
+        }
+        return list;
+    }
 }
 const sll = new SinglyLikedList();
 sll.append(88);
@@ -85,6 +94,4 @@ sll.append(768);
 sll.append(7);
 sll.append(28);
 sll.remove(1);
-
-// console.log(sll.traverseAndReturnIndexNode(0))
-console.log(sll.pop());
+console.log(sll.printList())
