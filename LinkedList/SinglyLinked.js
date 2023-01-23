@@ -87,6 +87,14 @@ class SinglyLikedList{
         }
         return list;
     }
+    reverse(){
+        if(this.length === 1){
+            return this;
+        }
+
+        let first = this.head;
+        let second = first.next;
+    }
 }
 const sll = new SinglyLikedList();
 sll.append(88);
